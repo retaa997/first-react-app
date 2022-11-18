@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: darkslategrey;
+  font-family: sans-serif;
+}
+.App{
+  margin: 36px;
+}
+h1{
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 32px;
+}
+h4{
+  text-align: center;
+  font-size: 16px;
+  color: darkgrey;
+  margin-bottom: 16px;
+}
+.todo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  background-color: aliceblue;
+  border-radius: 16px;
+
+  transition: 0.5s;
+}
+
+.todo:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+.td{
+  display: flex;
+  align-items: center;
+}
+.todo-text{
+  font-size: 24px;
+  margin-left: 5px;
+}
+.todo-checkbox{
+  width: 20px;
+  height: 20px;
+  background-color:darkslategrey;
+  border-radius: 5px;
+}
+.todo-delete{
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  border-radius: 50%;
+}
+
+.td.is-complete .todo-text{
+  text-decoration: line-through;
+}
+.td.is-complete .todo-checkbox{
+  background-color:chartreuse;
+}
+
+.add-btn{
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  width: 58px;
+  height: 58px;
+  padding: 16px;
+  background-image: linear-gradient(to right, brown, blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.add-text{
+  font-size: 24px;
+  color:white;
+}
+
+.add-form{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color:white;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+.add-form h5{
+  align-self: center;
+  margin-bottom: 8px;
+}
+.close-form{
+  width: 20px;
+  height: 20px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: white;
+  font-size: 16px;
+  background-color: brown;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.add-form input{
+  font-size: 16px;
+  color: cadetblue;
+  padding: 8px;
+  outline: none;
+  border: none;
+  margin: 0 16px 16px 16px;
+  border-radius: 16px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+.form-btn{
+  align-self: center;
+  width: 50%;
+  padding: 8px 4px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: darkslategrey;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.form-btn:hover{
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.6);
+}
