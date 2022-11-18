@@ -4,6 +4,8 @@
 <p>Hi, this is my first time doing with React.js</p>
 <p>Small and easy ToDo List project for the beginning!</p>
 
+https://www.youtube.com/watch?v=Nt3UHAm3TJA
+
 
 <h2>How to start?</h2>
 <ol>
