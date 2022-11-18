@@ -2,7 +2,7 @@
 
 <h1>Todo - Full MERN Stack</h1>
 <p>Hi, this is my first time doing with React.js</p>
-<p>Small and easy ToDo List projext for the beginning!</p>
+<p>Small and easy ToDo List project for the beginning!</p>
 
 
 <h2>How to start?</h2>
